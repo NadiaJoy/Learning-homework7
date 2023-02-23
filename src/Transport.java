@@ -3,7 +3,7 @@ public class Transport {
     private int seats;
 
     public void move() {
-        System.out.println(name + " is moving");
+        System.out.println("This transport is moving");
     }
 
     public void options() {
