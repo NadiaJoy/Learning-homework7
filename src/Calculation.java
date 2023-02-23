@@ -9,24 +9,28 @@ public class Calculation {
         Random rd = new Random();
         for (int i = 0; i < size; i++) {
             myArray[i] = rd.nextInt();
-            //  System.out.println(i + " " +myArray[i]);
+            //System.out.println(i + " " +myArray[i]);
         }
 
         int[] myArray10 = new int[10];
         for (int i = 0; i < myArray10.length; i++) {
             myArray10[i] = i + 1;
-            //  System.out.println(i + " " +myArray10[i]);
+            //System.out.println(i + " " + myArray10[i]);
         }
 
-        int[] myArrayEven = new int[20];
+        int[] myArrayEven = new int[5];
         int j = 0;
-        while (j < myArrayEven.length) {
-            int number = rd.nextInt();
-            if (number % 2 == 0) {
-                myArrayEven[j] = number;
-                System.out.println(j + " " + myArrayEven[j]);
+        for (int i = 0; i < myArray10.length; i++) {
+            if (myArray10[i] % 2 == 0) {
+                myArrayEven[j] = myArray10[i];
                 j++;
             }
         }
+        int a = 0;
+        while (a < myArrayEven.length) {
+            System.out.println(a + " " +myArrayEven[a]);
+            a++;
+        }
     }
 }
+
